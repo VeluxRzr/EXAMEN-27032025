@@ -8,10 +8,22 @@ delete from articuloPedido;
 delete from contenedor;
 
 INSERT INTO articulo(idArticulo,volumen,nombre,categoria) VALUES 
-(259,5,"mayonesa musa","no perecedero"),
-(260,9,"agua font vella","no perecedero");
+(210,3.0,"cocacola","no perecedero"),
+(211,4.0,"carne de ternera","perecedero"),
+(212,5.0,"manzana golden","perecedero"),
+(213,9.0,"toallitas bebe","perecedero"),
+(259,5.0,"mayonesa musa","no perecedero"),
+(260,9.0,"agua font vella","no perecedero");
 
-INSERT INTO articuloPedido(idArticulo,idPedido,volumen) VALUES
+INSERT INTO pedido(idPedido,numArticulos) VALUES
+(1,6),
+(2,5),
+(3,9),
+(4,2),
+(5,12),
+(6,84);
+
+INSERT INTO articuloPedido(idArticulo,idPedido,volumen,embolsado) VALUES
 (25,1,6),
 (28,1,3),
 (63,1,8);

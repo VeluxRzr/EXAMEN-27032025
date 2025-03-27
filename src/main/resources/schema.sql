@@ -17,8 +17,9 @@ CREATE TABLE "contenedor" (
 
 CREATE TABLE "articuloPedido" (
 	"idArticulo"	INTEGER NOT NULL,
-	"idPedido"	INTEGER NOT NULL,
+	"idPedido"	REAL NOT NULL,
 	"volumen" integer not null,
+	"embolsado" integer not null,
 	PRIMARY KEY("idArticulo","idPedido"),
 	FOREIGN KEY("idArticulo") REFERENCES "articulo"("idArticulo")
 );
@@ -26,7 +27,7 @@ CREATE TABLE "articuloPedido" (
 CREATE TABLE "pedido" (
 	"idPedido"	INTEGER NOT NULL,
 	"numArticulos"	INTEGER NOT NULL,
-	PRIMARY KEY("idPedido" AUTOINCREMENT)
+	PRIMARY KEY("idPedido","numArticulos")
 );
 
 CREATE TABLE "articulo" (
