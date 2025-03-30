@@ -28,7 +28,7 @@ private void initialice() {
 	
 	
 	frmEmbolsar = new JFrame();
-	frmEmbolsar.setTitle("PRESTAMO LIBROS");
+	frmEmbolsar.setTitle("Embolsado de Articulos");
 	frmEmbolsar.setBounds(0, 0, 400, 500);
 	frmEmbolsar.getContentPane().setLayout(new MigLayout("", "[grow]", "[][grow][][][][][][][][][][][][][][]"));
 	
