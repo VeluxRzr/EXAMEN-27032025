@@ -24,7 +24,7 @@ INSERT INTO pedido(idPedido,numArticulos) VALUES
 (6,84);
 
 INSERT INTO articuloPedido(idArticulo,idPedido,volumen,embolsado) VALUES
-(25,1,6),
-(28,1,3),
-(63,1,8);
+(25,1,6,0),
+(28,1,3,0), 
+(63,1,8,0);
 
